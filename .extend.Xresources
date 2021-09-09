@@ -1,0 +1,75 @@
+! special
+*.foreground:   #d7f6fe
+*.background:   #00080a
+*.cursorColor:  #d7f6fe
+
+! black
+*.color0:       #292d2e
+*.color8:       #444a4c
+
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #089822
+*.color10:      #0bcf2f
+
+! yellow
+*.color3:       #a0681f
+*.color11:      #fda531
+
+! blue
+*.color4:       #004A7D
+*.color12:      #006fbd
+
+! magenta
+*.color5:       #75278f
+*.color13:      #ac39d2
+
+! cyan
+*.color6:       #009ac1
+*.color14:      #00ccff
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
+
+
+Xcursor.theme: Plata-Noir
+Xcursor.size:  0
+
+
+!URxvt.font: xft:Hack:size=10
+!URxvt.font: xft:monofur:size=12
+!URxvt.geometry: 80x20
+!URxvt.depth: 32
+!URxvt.background:		[100]#012F3A
+!URxvt*scrollBar:                      false
+!URxvt*mouseWheelScrollPage:           false
+!URxvt*cursorBlink:                    true
+!URxvt*.foreground: 		      #162025
+!URxvt*cursorColor:		      #162025
+!URxvt*saveLines:                      5000
+
+! ROFI SETUP HERE !
+! Enable the extended coloring options
+rofi.color-enabled: true
+!                  bg       border   separator
+rofi.color-window: #162025, #023859, #023859
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: #162025, #bfbfbf, #162025, #162025, #00CCFF
+rofi.color-active: #162025, #bfbfbf, #162025, #162025, #00CCFF
+rofi.color-urgent: #162025, #bfbfbf, #162025, #162025, #00CCFF
+
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.lines: 5
+!rofi.font: Hack Regular 12
+!rofi.font: monofur 13
+rofi.bw: 1
+rofi.columns: 2
+rofi.padding: 5
+rofi.fixed-num-lines: true
+rofi.hide-scrollbar: true
+rofi.font: Roboto Regular 12

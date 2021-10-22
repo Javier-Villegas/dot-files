@@ -1,5 +1,5 @@
 [global]
-font = Iosevka Term 11
+font = Iosevka 11
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -70,8 +70,10 @@ hide_duplicate_count = yes
 # The width can be negative.  In this case the actual width is the
 # screen width minus the width defined in within the geometry option.
 #geometry = "250x50-40+40"
-geometry = "300x50-15+49"
-
+#geometry = "300x50-100+100"
+origin = bottom-right
+width = 300
+offset = 15x15
 # Shrink window if it's smaller than the width.  Will be ignored if
 # width is 0.
 shrink = no
@@ -126,7 +128,7 @@ separator_height = 2
 padding = 6
 
 # Horizontal padding.
-horizontal_padding = 6
+horizontal_padding = 10
 
 # Define a color for the separator.
 # possible values are:
@@ -154,7 +156,7 @@ max_icon_size = 80
 # Paths to default icons.
 icon_path = /usr/share/icons/Paper/16x16/mimetypes/:/usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/emblems/
 
-frame_width = 3
+frame_width = 2 
 frame_color = "#8EC07C"
 
 [shortcuts]
@@ -181,23 +183,23 @@ context = ctrl+shift+period
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-frame_color = "#3B7C87"
-foreground = "#3B7C87"
-background = "#191311"
+frame_color = "#95c4ce"
+foreground = "#d3d4de"
+background = "#1c1e26"
 #background = "#2B313C"
 timeout = 4
 
 [urgency_normal]
-frame_color = "#5B8234"
-foreground = "#5B8234"
-background = "#191311"
+frame_color = "#6bdfe6"
+foreground = "#d3d4de"
+background = "#1c1e26"
 #background = "#2B313C"
 timeout = 6
 
 [urgency_critical]
-frame_color = "#B7472A"
-foreground = "#B7472A"
-background = "#191311"
+frame_color = "#ec6a88"
+foreground = "#d3d4de"
+background = "#1c1e26"
 #background = "#2B313C"
 timeout = 8
 

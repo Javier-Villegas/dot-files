@@ -1,0 +1,16 @@
+#!/bin/bash
+latest=$(curl https://github.com/ppy/osu/releases/latest)
+latest=$(echo `expr match "$latest" ".*\([0-9][0-9][0-9][0-9].[0-9][0-9][0-9][0-9].[0-9]\)"`)
+echo $latest
+prev=$(cat ~/apps/.latest)
+
+if [[ "$latest" == "$prev" ]]; then
+	PIPEWIRE_LATENCY=120/44100 gamemoderun ~/apps/osu.AppImage
+else
+	echo "Updating osu!Lazer."
+	wget -O ~/apps/osu.AppImage https://github.com/ppy/osu/releases/download/$latest/osu.AppImage
+	chmod +x ~/apps/osu.AppImage
+	echo $latest | cat > ~/apps/.latest
+	echo "Update complete. Launching game."
+	exec PIPEWIRE_LATENCY=120/44100 gamemoderun ~/apps/osu.AppImage
+fi	

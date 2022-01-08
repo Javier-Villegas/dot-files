@@ -1,10 +1,11 @@
 #!/bin/bash
-latest=$(curl https://github.com/ppy/osu/releases/latest)
-latest=$(echo `expr match "$latest" ".*\([0-9][0-9][0-9][0-9].[0-9][0-9][0-9][0-9].[0-9]\)"`)
+latest=$(curl https://github.com/ppy/osu/releases/latest | egrep -o '[0-9]{4}.[0-9]{1,4}.[0-9]{1,}')
 echo $latest
 prev=$(cat ~/apps/.latest)
 
+echo $prev
 if [[ "$latest" == "$prev" ]]; then
+	echo "osu!Lazer is up-to-date."
 	PIPEWIRE_LATENCY=120/44100 gamemoderun ~/apps/osu.AppImage
 else
 	echo "Updating osu!Lazer."

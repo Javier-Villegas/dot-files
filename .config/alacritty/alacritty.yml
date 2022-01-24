@@ -1,0 +1,44 @@
+window:
+  padding:
+    x: 10
+    y: 10
+
+colors:
+  primary:
+    background: "0x15141b"
+    foreground: "0xedecee"
+  cursor:
+    text: "0xd2d4de" # black
+    cursor: "0xd2d4de"
+  normal:
+    black: "0x13120b"
+    red: "0xc55858"
+    green: "0x54c59f"
+    yellow: "0xc7a06f"
+    blue: "0x6cb2c7"
+    magenta: "0xc17ac8"
+    cyan: "0x8464c6"
+    white: "0x6d6d6d"
+  bright:
+    black: "0x15141b"
+    red: "0xff6767"
+    green: "0x61ffca"
+    yellow: "0xffca85"
+    blue: "0x82e2ff"
+    magenta: "0xf694ff"
+    cyan: "0xa277ff"
+    white: "0xedecee"
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+    style: Regular
+  bold:
+    family: FiraCode Nerd Font
+    style: Bold
+  italic:
+    family: FiraCode Nerd Font
+    style: Italic
+
+  # Point size of the font
+  size: 11

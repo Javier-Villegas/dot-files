@@ -9,6 +9,9 @@ fi
 # Enable colors
 autoload -U colors && colors
 
+bindkey "^[[H"	beginning-of-line
+bindkey "^[[F"	end-of-line
+bindkey "^[[3~"	delete-char
 
 # History in cache directory:
 HISTSIZE=1000
@@ -36,4 +39,4 @@ source /usr/share/doc/find-the-command/ftc.zsh 2>/dev/null
 
 # Prompt
 autoload -U promptinit; promptinit
-PS1="%B%{$fg[cyan]%}%n %{$fg[cyan]%}[%{$fg[green]%}%~%{$fg[cyan]%}] %{$fg[magenta]%}>>%{$reset_color%} %b"
+PROMPT="%B%{$fg[yellow]%}%n %{$fg[white]%}in %{$fg[blue]%}%~ %b%{$fg[magenta]%}>%{$reset_color%} "

@@ -1,11 +1,11 @@
 #!/bin/sh
 fonts=("ttc-iosevka" "ttf-firacode-nerd" "noto-fonts" "noto-fonts-cjk" "noto-fonts-emoji")
-tools=("kitty" "wireshark-cli" "wireshark-qt" "nemo" "nemo-preview" "librewolf-bin" "flameshot" "neovim" "rofi")
+tools=("kitty" "wireshark-cli" "wireshark-qt" "nemo" "nemo-preview" "librewolf-bin" "flameshot" "neovim" "rofi" "zsh")
 comms=("discord" "thunderbird-bin" "teams")
 remote=("openssh" "remmina" "barrier")
 virtualisation=("qemu-full" "libvirtd" "docker")
 fun=("steam-native-runtime" "stremio")
-wm=("bspwm" "sxhkd" "xorg-server")
+wm=("bspwm" "sxhkd" "xorg-server" "xorg" "xorg-init" "nitrogen" "polybar" "dunst")
 
 pkgs=("${fonts[@]}" "${tools[@]}" "${comms[@]}" "${remote[@]}" "${virtualisation[@]}" "${wm[@]}")
 

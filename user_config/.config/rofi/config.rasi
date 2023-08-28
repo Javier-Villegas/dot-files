@@ -1,0 +1,9 @@
+configuration {
+	font            : "RobotoMono Nerd Font 12";
+	display-ssh     : "";
+	display-run     : "";
+	display-drun    : "";
+	display-window  : "";
+	display-combi   : "";
+}
+@theme "/home/javier/.local/share/rofi/themes/squared-nord.rasi"

@@ -6,8 +6,9 @@ remote=("openssh" "remmina" "barrier")
 virtualisation=("qemu-full" "libvirtd" "docker")
 fun=("steam-native-runtime" "stremio")
 wm=("bspwm" "sxhkd" "xorg-server" "xorg" "xorg-init" "nitrogen" "polybar" "dunst")
+drivers=("mesa" "lib32-mesa" "pipewire" "pipewire-pulse" "pipewire-alsa" "pipewire-jack" "libva-mesa-driver" "lib32-libva-mesa-driver" "mesa-vdpau" "lib32-mesa-vdpau" "vulkan-radeon" "lib32-vulkan-radeon" "xf86-video-amdgpu" "amd-ucode")
 
-pkgs=("${fonts[@]}" "${tools[@]}" "${comms[@]}" "${remote[@]}" "${virtualisation[@]}" "${wm[@]}")
+pkgs=("${fonts[@]}" "${tools[@]}" "${comms[@]}" "${remote[@]}" "${virtualisation[@]}" "${wm[@]}" "${drivers[@]}")
 
 
 # Install yay
@@ -26,4 +27,4 @@ yay -Syu ${pkgs[@]}
 
 bash rebuild_config.sh
 
-echo Don!
+echo Done!

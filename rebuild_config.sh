@@ -10,7 +10,6 @@ for dir in ${directories[@]}; do
 		mkdir -p $HOME/${dir:2}
 		files=$(ls -Ap $dir | grep -v '/')
 		for file in ${files[@]}; do
-			echo $(realpath $dir/$file) $HOME/${dir:2}/$file 
 			ln -sf $(realpath $dir/$file) $HOME/${dir:2}/$file
 		done
 	fi

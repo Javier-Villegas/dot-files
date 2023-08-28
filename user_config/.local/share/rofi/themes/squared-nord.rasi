@@ -23,7 +23,7 @@
 }
 window {
     location            : center;
-    y-offset            : -420px;
+    y-offset            : -320px;
     width               : 600px;
     background-color    : @bg-color;
 }

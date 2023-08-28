@@ -31,9 +31,9 @@ my_color15	= ${xrdb:color15}
 monitor = ${env:MONITOR:HDMI-A-0}
 ;monitor = ${env:MONITOR:eDP1}
 bottom = false
-width = 1888
+width = 1896
 height = 25
-offset-x = 16
+offset-x = 12
 offset-y = 4
 radius = 5
 fixed-center = true
@@ -49,7 +49,7 @@ border-size = 0
 border-color = ${colors.my_color2}
 
 padding-left = 0
-padding-right = 1
+padding-right = 0
 
 module-margin-left = 0
 module-margin-right = 0
@@ -60,7 +60,7 @@ font-0 = Iosevka:fontformat=truetype:size=13;3
 font-1 = siji:fontformat=truetype:size=13;3
 font-2 = SazanamiMincho:fontformat=truetype:size=13;3
 
-modules-left = i3 xwindow
+modules-left = bspwm xwindow
 modules-center = date 
 modules-right = mpd
 
@@ -73,9 +73,18 @@ modules-right = mpd
 ;tray-detached = false
 ;tray-background = ${colors.my_background}
 
-wm-restack = i3
+wm-restack = bspwm
 
-override-redirect = true
+override-redirect = false
+[module/bspwm]
+type = internal/bspwm
+
+label-occupied = " %index% "
+label-empty = 
+label-unfocused = " %index% "
+label-focused = " %index% "
+label-focused-underline = #3f3f3f
+label-separator-padding = 0
 
 [module/i3]
 type = internal/i3
@@ -85,12 +94,12 @@ label-unfocused-foreground = ${colors.my_foreground}
 
 label-mode = %mode%
 label-mode-padding = 1
-label-mode-background = ${colors.my_color4}
+label-mode-background = ${colors.my_color5}
 
 label-focused = %index%
 label-focused-foreground = ${colors.my_foreground}
 label-focused-background = ${colors.my_background}
-label-focused-underline = ${colors.my_color4}
+label-focused-underline = ${colors.my_color5}
 label-focused-padding = 1
 
 label-unfocused = %index%
@@ -142,6 +151,7 @@ time = "%a %b %d, %I:%M %p "
 
 time-alt = %H:%M
 
+label-foreground = ${colors.my_color5}
 format-prefix-foreground = ${colors.my_foreground}
 ;format-underline = ${colors.my_color5}
 format-underline =
@@ -164,6 +174,6 @@ margin-bottom = 5
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = %title:0:50:...%
 label-padding = 10
-label-foreground = ${colors.my_color4}
+label-foreground = ${colors.my_color5}
